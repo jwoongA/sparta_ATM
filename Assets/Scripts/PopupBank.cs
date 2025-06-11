@@ -119,7 +119,7 @@ public class PopupBank : MonoBehaviour
             return;
         }
 
-        // (본인 아이디와 같은지 체크도 추가 가능!)
+        // 본인 아이디와 같은지 체크도 추가 가능
         string senderId = GameManager.Instance.userData.id;
 
         if (senderId == targetId)
@@ -137,7 +137,7 @@ public class PopupBank : MonoBehaviour
         {
             remittanceWarning.SetActive(true);
             warningText.text = "송금 성공";
-            GameManager.Instance.LoadUserData(); // 잔액 갱신!
+            GameManager.Instance.LoadUserData(); // 잔액 갱신
         }
         else
         {
